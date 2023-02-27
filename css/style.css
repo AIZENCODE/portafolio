@@ -218,7 +218,7 @@ a {
 }
 
 .hero__container {
-    height: 100vh;
+    height: 950px;
     display: grid;
     position: relative;
     width: 100%;
