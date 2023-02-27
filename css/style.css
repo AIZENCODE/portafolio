@@ -786,6 +786,7 @@ a {
 
 .lenguaje__description{
     padding-top: 1.5em;
+    line-height: 25px;
     font-size:var(--size-paragraph) ;
     font-weight: 300;
     color: #fff;
