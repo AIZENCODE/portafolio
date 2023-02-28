@@ -212,7 +212,7 @@ a {
 
     background: url('../img/fondo1.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center bottom;
     background-size: cover;
 }
@@ -644,7 +644,7 @@ a {
     position: relative;
     display: grid;
     gap: 2em;
-    justify-content: center;
+    /* justify-content: center; */
     
 }
 
@@ -685,6 +685,83 @@ a {
     }
 
 }
+
+/* -----------------Nuevo conocimiento  -------------------*/
+
+.conocimientos{
+    
+    background: linear-gradient(180deg, rgba(0,0,0,0.8169642857142857) 11%, rgba(56,149,227,0) 46%, rgba(0,0,0,0.8981967787114846) 88%), url('../img/ffflurry.svg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center bottom;
+    background-size: cover;
+}
+.conocimientos__lenguajes2{
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    justify-content: space-evenly;
+    padding: 3em 0;
+    gap: 2em 1.4em;
+}
+.lenguaje2{
+    display: flex;
+    justify-content: center;
+}
+.leguaje2__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 2em;
+    /* outline: 1px solid #fff ; */
+    border-radius: 50%;
+    color: #fff;
+    filter: grayscale(100%);
+    transform: scale(1);
+    transition: all .5s;
+}
+
+.leguaje2__content:hover{
+    display: flex;
+    /* align-items: center; */
+    outline: unset;
+    box-shadow: 0px 0px 20px 5px var(--c);
+   
+    gap: 1em;
+    color: var(--c);
+    filter: grayscale(0%);
+    
+    /* color: var(--c); */
+
+}
+.lenguaje__img{
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    display: block;
+    transform: scale(1);
+    object-fit: contain;
+    transition: all .3s;
+
+}
+
+.leguaje2__content:hover img{
+    transform: scale(1.2);
+
+}
+
+
+
+
+
+/* -----------------Nuevo conocimiento  -------------------*/
+
+
+
+
+
+
 
 .conocimientos__lenguajes{
     display: grid;
@@ -776,18 +853,9 @@ a {
 }
 
 
-.lenguaje__img{
-        width: 80px;
-        height: 80px;
-        display: block;
-       
-        object-fit: contain;
-    
-  
-}
 
 .lenguaje__title{
-    padding-top: .5em;
+    /* padding-top: .5em; */
     font-size:var(--size-title-card) ;
     font-weight: 900;
     
@@ -825,7 +893,7 @@ a {
     display: flex;
     justify-content: center;
     justify-items: flex-start;
-    align-items: center;
+    /* align-items: center; */
     gap: 20px;
     flex-wrap: wrap;
 }
