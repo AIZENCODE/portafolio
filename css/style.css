@@ -144,6 +144,10 @@
 /* fin loagding */
 
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-body);
     background-color: #000;
@@ -1113,141 +1117,61 @@ a {
 
 .contact{
     padding: 4em 0;
-    background: url('../img/contact1.jpg');
+    background: linear-gradient(180deg, #000 0%,#3896e33a 50%,#000 100%),url('../img/teclado.jpg');
     background-repeat: no-repeat;
     /* background-attachment: ; */
-    background-size: contain;
-    background-position: start;
+    background-size: cover;
+    
+    background-position: center center;
     /* background-color: var(--plomo); */
 }
 
 .contact__container{
   
     display: flex;
-    justify-content: end;
-}
-
-.form {
-    max-width: 550px;
-    width: 550px;
-    margin-top: 2rem;
-    display: grid;
-    /* grid-template-columns: 1fr; */
-    gap: 2em;
-    padding: 3em;
-    background: #ffffff6d;
-    border-radius: 10px;
-
-}
-
-.cta--contact{
-    padding: 1em 2em;
-    font-weight: 900;
-    justify-self: center;
-    border-radius: 10px;
-    /* letter-spacing: 5px; */
-    /* align-self: center; */
-    background: #ffffff32;
-    color: #FFF;
-    border: none;
-    transition: all .3s;
-    
-}
-
-.cta--contact:hover{
-    padding: 1em 2em;
-    font-weight: 900;
-    justify-self: center;
-    border-radius: 10px;
-    letter-spacing: 5px;
-    /* align-self: center; */
-    background: #ffffff32;
-    background: #fff;
-    color: var(--black);
-    border: none;
-    
-}
-
-.form__group{
-    position: relative;
-}
-
-.input {
-    background: none;
-    color: var(--plomo);
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #fff;
-    font-family: var(--font-body);
-    font-weight: 300;
-}
-.input:focus{
-    outline: none;
-    color: #fff;
-}
-.label{
-
-    color: #fff;
-    font-size: 16px;
- 
-    transition: 0.5s ease all;
-    pointer-events: none;
-}
-
-
-.input:focus .label,
-input:valid .label{
-
-    font-size: 12px;
-    color: #2196f3;
-
-}
-
-
-.input--textarea {
-    grid-column: 2 span;
-    height: 150px;
-    overflow: auto;
-}
-
-.barra{
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
-.barra::before{
-    content: "";
-    height: 2px;
-    width: 0%;
-    bottom: 0;
-    position: absolute;
-    background-color: #3895EA;
-    transition: 0.3s ease width;
-    left: 0;
-}
-
-.input:focus~.barra::before{
-    width: 100%;
-}
-
-.cta {
-
-    background-color: #3895EA;
-    color: #fff;
-
-    font-weight: 500;
-    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    
-    
-    display: inline-block;
-    padding: .5em 1.5em;
-    border-radius: var(--border-radios-cta);
 }
+
+.contacto__content{
+    max-width: 550px;
+}
+.contacto__title{
+    color: #fff;
+}
+.contacto__paragraph{
+    margin-top: 1em;
+    line-height: 25px;
+    color: #fff;
+}
+
+.contact__cta {
+    font-weight: 900;
+    display: inline-block;
+    max-width: 150px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 2em;
+    background: unset;
+    color: #FFF;
+    padding: 1em 1.5em;
+    outline: 1px #fff solid;
+    transition: all .6s ease;
+}
+
+.contact__cta:hover {
+    /* background-color: #fff; */
+    /* letter-spacing: 2px; */
+    outline: 1px #fff solid;
+    background: #fff;
+    color: #000;
+
+}
+
+
+
 
 /*------------------- Footer ----------------*/
 
