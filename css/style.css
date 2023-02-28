@@ -635,6 +635,7 @@ a {
 .experience__paragraph::before{
     content: ">";
    
+    font-weight: 900;
     margin-right: 5px;
     font-size: 1.5em;
     color: var(--azul-acero);
