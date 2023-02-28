@@ -14,7 +14,7 @@
 
     /* Tamaños de letra */
     --size-title: 2.5em;
-    --size-paragraph:1em;
+    --size-paragraph:.9em;
 
 
     --size-title-card:1.5em;
@@ -210,7 +210,7 @@ a {
 
 .hero {
 
-    background: url('../img/fondo.jpg');
+    background: url('../img/fondo1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
@@ -704,13 +704,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-     
     border: 1px solid rgba(255, 255, 255, 0.242) ;
+    filter: grayscale(100%);
+    transition: all .3s;
     
 }
 .lenguaje:hover{
-    
+    filter: grayscale(0%);
     border: 1px solid ;
     
 }
@@ -806,6 +806,7 @@ a {
     font-weight: 300;
     color: #fff;
     text-align: center;
+    /* transform: scale(0); */
 }
 
 
@@ -997,7 +998,7 @@ a {
 
 .contact{
     padding: 4em 0;
-    background: url('../img/contact.jpg');
+    background: url('../img/contact1.jpg');
     background-repeat: no-repeat;
     /* background-attachment: ; */
     background-size: contain;
