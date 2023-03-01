@@ -14,10 +14,10 @@
 
     /* Tamaños de letra */
     --size-title: 2.5em;
-    --size-paragraph:.9em;
+    --size-paragraph: .9em;
 
 
-    --size-title-card:1.5em;
+    --size-title-card: 1.5em;
 
 
     /* bordes */
@@ -43,9 +43,9 @@
     --instagram: #D43089;
     --linkedin: #0073b1;
     /* Niveles */
-    --nivel-basico:#eaea4f;
-    --nivel-intermedio:#509c58;
-    --nivel-avanzado:rgb(204, 19, 93);
+    --nivel-basico: #eaea4f;
+    --nivel-intermedio: #509c58;
+    --nivel-avanzado: rgb(204, 19, 93);
 
 
     /* Shadow */
@@ -144,7 +144,7 @@
 /* fin loagding */
 
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -251,31 +251,34 @@ a {
     box-shadow: 0 10px 820px 0 rgba(11, 19, 86, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.nav__container{
+.nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav__logocontent{
+
+.nav__logocontent {
     display: flex;
     align-items: center;
     color: #fff;
     gap: 1em;
 }
-.nav__logo{
+
+.nav__logo {
     display: block;
     height: 50px;
     width: 50px;
 }
+
 .nav__menu {
 
     /* outline: 1px solid red; */
     height: 100%;
-  
+
     /* align-items: center; */
     /* align-content: center; */
     display: flex;
-    padding:0 2em ;
+    padding: 0 2em;
     gap: 4em;
 
 }
@@ -613,7 +616,7 @@ a {
 
     color: var(--link);
     font-size: 1.8em;
-   
+
 
 }
 
@@ -636,15 +639,16 @@ a {
     color: rgba(255, 255, 255, 0.859);
 }
 
-.experience__paragraph::before{
+.experience__paragraph::before {
     content: ">";
-   
+
     font-weight: 900;
     margin-right: 5px;
     font-size: 1.5em;
     color: var(--azul-acero);
     /* background-color: #0073b1; */
 }
+
 .link__enterprise {
     color: #fff;
 
@@ -657,16 +661,17 @@ a {
 
 /* ----------------Conocimientos ---------------------*/
 
-.conocimientos{
+.conocimientos {
 
     padding: 8em 0;
 }
+
 .conocimientos__container {
     position: relative;
     display: grid;
     gap: 2em;
     /* justify-content: center; */
-    
+
 }
 
 .title--conocimientos {
@@ -709,25 +714,26 @@ a {
 
 /* -----------------Nuevo conocimiento  -------------------*/
 
-.conocimientos{
-    
-    background: linear-gradient(180deg, rgba(0,0,0,0.8169642857142857) 11%, rgba(56,149,227,0) 46%, rgba(0,0,0,0.8981967787114846) 88%), url('../img/ffflurry.svg');
+.conocimientos {
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8169642857142857) 11%, rgba(56, 149, 227, 0) 46%, rgba(0, 0, 0, 0.8981967787114846) 88%), url('../img/ffflurry.svg');
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-position: center bottom;
     background-size: cover;
 }
 
-.conocimientos__content{
+.conocimientos__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
-.conocimientos__texts{
+
+.conocimientos__texts {
     color: #fff;
 }
 
-.conocimientos__lenguajes2{
+.conocimientos__lenguajes2 {
     /* width: 100%; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -735,17 +741,19 @@ a {
     padding: 3em 0;
     gap: 2em 1.4em;
 }
-.lenguaje2{
+
+.lenguaje2 {
     display: flex;
     justify-content: center;
 }
-.leguaje2__content{
+
+.leguaje2__content {
     overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     padding: 2em;
     /* outline: 1px solid #fff ; */
     border-radius: 50%;
@@ -754,17 +762,19 @@ a {
     transform: scale(1);
     transition: all .5s;
 }
-.leguaje2__content::after{
+
+.leguaje2__content::after {
     content: "";
     position: absolute;
     bottom: 0;
     width: 100%;
     transition: all 1s;
     /* border-bottom: 1px  solid var(--c);   */
-   
-  
+
+
 }
-.leguaje2__content:hover::after{
+
+.leguaje2__content:hover::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -773,20 +783,21 @@ a {
 
 }
 
-.leguaje2__content:hover{
+.leguaje2__content:hover {
     display: flex;
     /* align-items: center; */
     outline: unset;
     /* box-shadow: 0px 0px 20px 5px var(--c); */
-   
+
     gap: 1em;
     color: var(--c);
     filter: grayscale(0%);
-    
+
     /* color: var(--c); */
 
 }
-.lenguaje__img{
+
+.lenguaje__img {
     align-self: center;
     width: 50px;
     height: 50px;
@@ -797,7 +808,7 @@ a {
 
 }
 
-.leguaje2__content:hover img{
+.leguaje2__content:hover img {
     transform: scale(1.2);
 
 }
@@ -814,35 +825,38 @@ a {
 
 
 
-.conocimientos__lenguajes{
+.conocimientos__lenguajes {
     display: grid;
-    grid-template-areas: 
-    "html css css js"
-    "php php sql  js"
-    "bootstrap git laravel laravel"
-    "bootstrap figma xd tailwindcss";
+    grid-template-areas:
+        "html css css js"
+        "php php sql  js"
+        "bootstrap git laravel laravel"
+        "bootstrap figma xd tailwindcss";
     gap: 10px;
-    
+
 }
-.lenguaje{
-    
+
+.lenguaje {
+
     position: relative;
-    padding: 1em ;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.242) ;
+    border: 1px solid rgba(255, 255, 255, 0.242);
     filter: grayscale(100%);
     transition: all .3s;
-    
+
 }
-.lenguaje:hover{
+
+.lenguaje:hover {
     filter: grayscale(0%);
-    border: 1px solid ;
-    
+    border: 1px solid;
+
 }
-.lenguaje::after{
+
+.lenguaje::after {
     content: "";
     position: absolute;
     top: 0;
@@ -850,78 +864,36 @@ a {
     left: 0;
     bottom: 0;
     transition: all 2s ease;
-    
-}
-.lenguaje:hover::after{
-   
-    border: 1px solid ;
-    
+
 }
 
-.lenguaje--html{
-    grid-area: html;
-    color: #E34D26;
-}
-.lenguaje--css{
-    grid-area: css;
-    color: #264CE3;
-}
-.lenguaje--js{
-    grid-area: js;
-    color: #F7DF1E;
-}
-.lenguaje--php{
-    grid-area: php;
-    color: #5E7EB3;
-}
-.lenguaje--sql{
-    grid-area: sql;
-    color: #00758F;
-}
-.lenguaje--bootstrap{
-    grid-area: bootstrap;
-    color: #7E13F8;
-}
-.lenguaje--tailwindcss{
-    grid-area: tailwindcss;
-    color: #11C2B4;
-}
-.lenguaje--laravel{
-    grid-area: laravel;
-    color: #FF2D20;
-}
-.lenguaje--figma{
-    grid-area: figma;
-    color: #0ACF83;
-}
-.lenguaje--xd{
-    grid-area: xd;
-    color: #FF61F6;
-}
-.lenguaje--git{
-    grid-area: git;
-    color: #DE4C36;
+.lenguaje:hover::after {
+
+    border: 1px solid;
+
 }
 
 
 
-.lenguaje__title{
+
+.lenguaje__title {
     /* padding-top: .5em; */
-    font-size:var(--size-title-card) ;
+    font-size: var(--size-title-card);
     font-weight: 900;
-    
+
 }
-.lenguaje__nivel{
-    font-size:var(--size-paragraph) ;
+
+.lenguaje__nivel {
+    font-size: var(--size-paragraph);
     font-weight: 500;
-    
+
 }
 
 
-.lenguaje__description{
+.lenguaje__description {
     padding-top: 1.5em;
     line-height: 25px;
-    font-size:var(--size-paragraph) ;
+    font-size: var(--size-paragraph);
     font-weight: 300;
     color: #fff;
     text-align: center;
@@ -935,97 +907,69 @@ a {
 
 
 /* --------------------Pasatiempos -----------------*/
-.mas__container{
+.mas__container {
     display: grid;
     gap: 2em;
 }
-.pasatiempos{
-    position: relative;
+
+
+.mas__cards {
+    /* width: 100%; */
+    margin: 3em 0;
     display: flex;
-    justify-content: center;
-    justify-items: flex-start;
-    /* align-items: center; */
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
 }
 
-.pasatiempo__item{
+.mas__card {
     position: relative;
-    max-width: 320px;
-   
-    border-radius: 20px;
-    overflow: hidden;
-
-}
-
-.pasatiempo__item::before{
-    border-radius: 20px;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     border: 1px solid #fff;
-
-}
-.pasatiempo__icon{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--i);
-    transition: 0.5s;
+    border-top: 0;
+    border-bottom:0 ;
+    border-radius: 30px;
+    padding: 2em;
     display: flex;
+    flex-direction: column;
+    color: #fff;
     justify-content: center;
     align-items: center;
-    z-index: 2000;
-
-}
-.pasatiempo__img{
-   
-   
-    width: 50%;
-    max-width: 100px;
-    transition: all .8s ease;
- }
-
-.pasatiempo__item:hover .pasatiempo__icon{
-   
-    top: 30px;
-    left: calc(50% - 40px);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    transition-delay: 0;
- 
-}
-.pasatiempo__content{
-    position: relative;
-    padding: 20px;
+    gap: 1em;
     text-align: center;
-    margin-top: 100px;
-    color: #fff;
-    z-index: 1000;
-    transform: scale(0);
-    transition: 0.5s;
-    transition-delay: 0s;
+    max-width: 350px;
+    transform: scale(.8);
+    transition: all .3s;
 }
-.pasatiempo__item:hover .pasatiempo__content{
 
+.mas__card:hover {
     transform: scale(1);
-    transition-delay: 0.25s;
-}
-.pasatiempo__title{
-    margin-top: 20px;
-    margin-bottom: 5px;
+    /* box-shadow: 0 0 50px #fff; */
 }
 
-.pasatiempo__paragraph{
-    font-weight: 300;
-    line-height: 1.5em;
+.mas__card:hover .mas__img {
+
+    text-shadow: 0 0 50px #fff;
 }
+
+.mas__img {
+
+    /* font-weight: 100; */
+    color: #fff;
+    font-size: 4em;
+    transition: all .3s;
+}
+
+.mas__paragrahp {
+    color: var(--plomo);
+    font-weight: 300;
+    /* margin-top: 1.5em; */
+    font-size: var(--size-paragraph);
+    letter-spacing: 2px;
+    line-height: var(--separacion);
+}
+
+
+
 /*----------------------------------  */
 /* ----------Works -----------*/
 
@@ -1064,7 +1008,8 @@ a {
     /* background: #fff; */
     box-shadow: 0px 0px 50px 0 rgba(255, 255, 255, 0.704), 0 6px 20px 0 rgba(255, 255, 255, 0.595);
 }
-.card:hover .card__picture::after{
+
+.card:hover .card__picture::after {
     opacity: 0;
 }
 
@@ -1076,7 +1021,7 @@ a {
     transition: all .5s;
 }
 
-.card__picture::after{
+.card__picture::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1115,19 +1060,19 @@ a {
 
 /*------------------- Contacto  ----------------*/
 
-.contact{
+.contact {
     padding: 4em 0;
-    background: linear-gradient(180deg, #000 0%,#3896e33a 50%,#000 100%),url('../img/teclado.jpg');
+    background: linear-gradient(180deg, #000 0%, #3896e33a 50%, #000 100%), url('../img/teclado.jpg');
     background-repeat: no-repeat;
     /* background-attachment: ; */
     background-size: cover;
-    
+
     background-position: center center;
     /* background-color: var(--plomo); */
 }
 
-.contact__container{
-  
+.contact__container {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1135,13 +1080,15 @@ a {
     text-align: center;
 }
 
-.contacto__content{
+.contacto__content {
     max-width: 550px;
 }
-.contacto__title{
+
+.contacto__title {
     color: #fff;
 }
-.contacto__paragraph{
+
+.contacto__paragraph {
     margin-top: 1em;
     line-height: 25px;
     color: #fff;
@@ -1284,16 +1231,16 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .conocimientos__lenguajes{
+    .conocimientos__lenguajes {
         display: grid;
-        grid-template-areas: 
-        "html css css"
-        "php sql  js"
-        "laravel laravel laravel "
-        "bootstrap git xd "
-        "bootstrap figma  tailwindcss";
+        grid-template-areas:
+            "html css css"
+            "php sql  js"
+            "laravel laravel laravel "
+            "bootstrap git xd "
+            "bootstrap figma  tailwindcss";
         gap: 10px;
-        
+
     }
 
 }
@@ -1304,33 +1251,34 @@ a {
 
         /* Tamaños de letra */
         --size-title: 2.2em;
-   
+
     }
 
-    .conocimientos__content{
+    .conocimientos__content {
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
     }
-    .conocimientos__lenguajes{
+
+    .conocimientos__lenguajes {
         display: grid;
-        grid-template-areas: 
-        "html "
-        "css"
-        "js"
-        "php"
-        "sql"
-        "git"
-        "bootstrap"
-        "laravel"
-        "xd"
-        "figma"
-        "tailwindcss";
-     
-     
+        grid-template-areas:
+            "html "
+            "css"
+            "js"
+            "php"
+            "sql"
+            "git"
+            "bootstrap"
+            "laravel"
+            "xd"
+            "figma"
+            "tailwindcss";
+
+
         gap: 10px;
-        
+
     }
 
     .info__photo {
@@ -1436,7 +1384,7 @@ a {
         transform: var(--transform-close);
     }
 
-    .contact{
+    .contact {
         padding: 4em 0;
         background: url('../img/contact.jpg');
         background-repeat: no-repeat;
