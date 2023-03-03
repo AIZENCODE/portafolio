@@ -906,6 +906,107 @@ a {
 /*----------------------------------  */
 
 
+
+
+
+/* --------------------Trabajos -----------------*/
+.trabajos{
+    margin: 5em 0;
+}
+.trabajos__texts{
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+    gap: 1em;
+    justify-content: center;
+    max-width: 550px;
+}
+
+.trabajos__items{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    padding: 3em 0;
+    gap: 2em 1.4em;
+}
+
+.trabajo__item{
+    position: relative;
+    /* width: 450px; */
+    height: 650px;
+    overflow: hidden;
+}
+
+.trabajo__item:hover::after{
+transform: translateY(550px);
+
+}
+
+.trabajo__img{
+    position: relative;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+    transition: all 3s;
+    /* filter: grayscale(100%); */
+}
+
+.trabajo__item:hover .trabajo__img{
+
+    object-position: bottom;
+    /* filter: grayscale(0%); */
+}
+.trabajo__item::after{
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #00000064;
+    transition: all 3s;
+}
+.trabajo__description{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    text-align: center;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    
+    color: #fff;
+    z-index: 1;
+}
+.pagina__enlace{
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-weight: 900;
+    transition: all .4s;
+    /* text-decoration: underline; */
+}
+.pagina__enlace:hover{
+    color: var(--p);
+ 
+}
+
+
+
+/*----------------------------------  */
+
+
+
+
+
 /* --------------------Pasatiempos -----------------*/
 .mas__container {
     display: grid;
@@ -1225,23 +1326,20 @@ a {
 
     }
 
-
     .info__container {
         padding: 8em 0;
         grid-template-columns: 1fr;
     }
 
-    .conocimientos__lenguajes {
+    .trabajos__items{
+        margin-top: 2em;
         display: grid;
-        grid-template-areas:
-            "html css css"
-            "php sql  js"
-            "laravel laravel laravel "
-            "bootstrap git xd "
-            "bootstrap figma  tailwindcss";
-        gap: 10px;
-
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-evenly;
+        padding: 3em 0;
+        gap: 2em 1.4em;
     }
+
 
 }
 
@@ -1261,25 +1359,7 @@ a {
         align-items: center;
     }
 
-    .conocimientos__lenguajes {
-        display: grid;
-        grid-template-areas:
-            "html "
-            "css"
-            "js"
-            "php"
-            "sql"
-            "git"
-            "bootstrap"
-            "laravel"
-            "xd"
-            "figma"
-            "tailwindcss";
 
-
-        gap: 10px;
-
-    }
 
     .info__photo {
 
@@ -1451,6 +1531,15 @@ a {
     .experience__enterprise--active {
         border-left: unset;
         border-bottom: 4px solid var(--link);
+    }
+
+    .trabajos__items{
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        padding: 3em 0;
+        gap: 2em 1.4em;
     }
 
 }
