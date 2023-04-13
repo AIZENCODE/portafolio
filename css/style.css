@@ -934,12 +934,12 @@ a {
 .trabajo__item{
     position: relative;
     /* width: 450px; */
-    height: 650px;
+    height: 550px;
     overflow: hidden;
 }
 
 .trabajo__item:hover::after{
-transform: translateY(550px);
+transform: translateY(450px);
 
 }
 
