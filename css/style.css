@@ -934,6 +934,7 @@ a {
 .trabajo__item{
     position: relative;
     /* width: 450px; */
+    border-radius: 20px;
     height: 550px;
     overflow: hidden;
 }
