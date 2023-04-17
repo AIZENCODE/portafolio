@@ -215,7 +215,7 @@ a {
 
 .hero {
 
-    background: url('../img/fondo1.jpg');
+    background: url('../img/fondo.webp');
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-position: center bottom;
@@ -1164,7 +1164,7 @@ transform: translateY(450px);
 
 .contact {
     padding: 4em 0;
-    background: linear-gradient(180deg, #000 0%, #3896e33a 50%, #000 100%), url('../img/teclado.jpg');
+    background: linear-gradient(180deg, #000 0%, #3896e33a 50%, #000 100%), url('../img/teclado.webp');
     background-repeat: no-repeat;
     /* background-attachment: ; */
     background-size: cover;
