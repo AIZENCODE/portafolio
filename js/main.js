@@ -1,4 +1,11 @@
 
+const nav__img = document.querySelector('.nav__img');
+const menu = document.querySelector('#menu');
 
-    // setTimeout(()=>document.getElementById("loader").classList.toggle("loader2"),1000);
-  
+nav__img.addEventListener('click', function() {
+
+ 
+  menu.classList.toggle('nav__menu--open');
+
+
+});
